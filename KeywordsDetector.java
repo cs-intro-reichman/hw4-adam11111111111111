@@ -30,9 +30,7 @@ public class KeywordsDetector {
         for (int i = 0; i < sentences.length; i++) {
             String[] temp = breakDownToWords(sentences[i]);
             for (int j = 0; j < keywords.length; j++) {
-                System.out.println(keywords[j]);
-                for (int k = 0; k < Math.min(temp.length, keywords.length); k++) {
-                    
+                for (int k = 0; k < temp.length; k++) {                   
                     if (temp[k].equals(keywords[j])) {
                         System.out.println(sentences[i]);
                         k = temp.length;
